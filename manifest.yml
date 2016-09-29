@@ -15,14 +15,14 @@ exclude_files:
 default_versions:
 - name: php
   version: 5.5.38
-- name: nginx
-  version: 1.11.3
 - name: httpd
   version: 2.4.23
 - name: newrelic
   version: 6.3.0.161
 - name: composer
-  version: 1.2.0
+  version: 1.2.1
+- name: nginx
+  version: 1.11.4
 url_to_dependency_map:
 - match: newrelic-php5-(\d+\.\d+\.\d+\.\d+)-linux
   name: newrelic
@@ -48,8 +48,8 @@ dependencies:
   md5: a5d5178f0f8133a65baf942a07408ba6
 - name: php
   version: 5.5.37
-  uri: https://buildpacks.cloudfoundry.org/concourse-binaries/php/php-5.5.37-linux-x64-1472240871.tgz
-  md5: acd3504e7ebcc446344ab87f86c72b43
+  uri: https://buildpacks.cloudfoundry.org/concourse-binaries/php/php-5.5.37-linux-x64-1474039705.tgz
+  md5: 10c24fb9e2f2188b388002fff7fef4ec
   cf_stacks:
   - cflinuxfs2
   modules:
@@ -79,12 +79,14 @@ dependencies:
   - mongo
   - mongodb
   - msgpack
+  - mssql
   - mysql
   - mysqli
   - opcache
   - openssl
   - pcntl
   - pdo
+  - pdo_dblib
   - pdo_mysql
   - pdo_pgsql
   - pdo_sqlite
@@ -112,10 +114,10 @@ dependencies:
   - zlib
 - name: php
   version: 5.5.38
-  uri: https://buildpacks.cloudfoundry.org/concourse-binaries/php/php-5.5.38-linux-x64-1472242037.tgz
+  uri: https://buildpacks.cloudfoundry.org/concourse-binaries/php/php-5.5.38-linux-x64-1474040750.tgz
   cf_stacks:
   - cflinuxfs2
-  md5: 5a1097031b6d04b4b4864ee8852452bf
+  md5: 8d8884e813697357199760dbbefc984b
   modules:
   - amqp
   - bz2
@@ -143,12 +145,14 @@ dependencies:
   - mongo
   - mongodb
   - msgpack
+  - mssql
   - mysql
   - mysqli
   - opcache
   - openssl
   - pcntl
   - pdo
+  - pdo_dblib
   - pdo_mysql
   - pdo_pgsql
   - pdo_sqlite
@@ -176,8 +180,8 @@ dependencies:
   - zlib
 - name: php
   version: 5.6.24
-  uri: https://buildpacks.cloudfoundry.org/concourse-binaries/php/php-5.6.24-linux-x64-1472245296.tgz
-  md5: aa27c42bc72ee2cb63e4190be84f8dcd
+  uri: https://buildpacks.cloudfoundry.org/concourse-binaries/php/php-5.6.24-linux-x64-1474041656.tgz
+  md5: d933038230b49e9b6ce9d056ff5dfb8e
   cf_stacks:
   - cflinuxfs2
   modules:
@@ -207,12 +211,14 @@ dependencies:
   - mongo
   - mongodb
   - msgpack
+  - mssql
   - mysql
   - mysqli
   - opcache
   - openssl
   - pcntl
   - pdo
+  - pdo_dblib
   - pdo_mysql
   - pdo_pgsql
   - pdo_sqlite
@@ -240,8 +246,8 @@ dependencies:
   - zlib
 - name: php
   version: 5.6.25
-  uri: https://buildpacks.cloudfoundry.org/concourse-binaries/php/php-5.6.25-linux-x64-1472246354.tgz
-  md5: a5caf760c1583e90dfc7d71b33986301
+  uri: https://buildpacks.cloudfoundry.org/concourse-binaries/php/php-5.6.25-linux-x64-1474042643.tgz
+  md5: 8c5d46ec1f6819a34f6e73151e7a2b07
   cf_stacks:
   - cflinuxfs2
   modules:
@@ -271,12 +277,14 @@ dependencies:
   - mongo
   - mongodb
   - msgpack
+  - mssql
   - mysql
   - mysqli
   - opcache
   - openssl
   - pcntl
   - pdo
+  - pdo_dblib
   - pdo_mysql
   - pdo_pgsql
   - pdo_sqlite
@@ -304,10 +312,10 @@ dependencies:
   - zlib
 - name: php
   version: 7.0.9
-  uri: https://buildpacks.cloudfoundry.org/concourse-binaries/php7/php7-7.0.9-linux-x64-1472493075.tgz
+  uri: https://buildpacks.cloudfoundry.org/concourse-binaries/php7/php7-7.0.9-linux-x64-1474039427.tgz
   cf_stacks:
   - cflinuxfs2
-  md5: f415d5648da9672937f57bd2d9128378
+  md5: 4d4b1c5b82606c1b1954fc52b866e143
   modules:
   - amqp
   - bz2
@@ -351,8 +359,8 @@ dependencies:
   - zlib
 - name: php
   version: 7.0.10
-  uri: https://buildpacks.cloudfoundry.org/concourse-binaries/php7/php7-7.0.10-linux-x64-1472494200.tgz
-  md5: 5aaffba8209d5ca0b14a4a51671a73af
+  uri: https://buildpacks.cloudfoundry.org/concourse-binaries/php7/php7-7.0.10-linux-x64-1474040158.tgz
+  md5: cf68ba4929fe975c9fd064440d38296d
   cf_stacks:
   - cflinuxfs2
   modules:
@@ -403,14 +411,14 @@ dependencies:
   - cflinuxfs2
   md5: 8b2b4d5572940d96bbb68cc10027b679
 - name: composer
-  version: 1.2.0
-  uri: https://buildpacks.cloudfoundry.org/php/binaries/trusty/composer/1.2.0/composer.phar
-  md5: df47dc307fa614daa5a10423bdf4e1bb
+  version: 1.2.1
+  uri: https://buildpacks.cloudfoundry.org/php/binaries/trusty/composer/1.2.1/composer.phar
+  md5: 2e232b14055952d1c4e026fdec5ed882
   cf_stacks:
   - cflinuxfs2
 - name: nginx
-  version: 1.11.3
-  uri: https://buildpacks.cloudfoundry.org/concourse-binaries/nginx/nginx-1.11.3-linux-x64.tgz
-  md5: 4944b39c77b4fc245df45e60eae635b3
+  version: 1.11.4
+  uri: https://buildpacks.cloudfoundry.org/concourse-binaries/nginx/nginx-1.11.4-linux-x64.tgz
+  md5: 5a62aad3f1d7baf8e47c8a61d710848e
   cf_stacks:
   - cflinuxfs2

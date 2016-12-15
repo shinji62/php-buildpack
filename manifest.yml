@@ -252,7 +252,7 @@ dependencies:
   - zlib
 - name: php
   version: 5.6.28
-  uri: https://s3-ap-northeast-1.amazonaws.com/buildpacks-binaries-bucket/concourse-binaries/php-yahoo/php-5.6.28-linux-x64-1481698010.tgz
+  uri: https://s3-ap-northeast-1.amazonaws.com/buildpacks-binaries-bucket/concourse-binaries/php-yahoo/php-5.6.28-linux-x64-1481775482.tgz
   md5: 12faee7424592a53dc6875cd58e1efd9
   cf_stacks:
   - cflinuxfs2
@@ -372,7 +372,7 @@ dependencies:
   - zlib
 - name: php
   version: 7.0.13
-  uri: https://buildpacks.cloudfoundry.org/dependencies/php7/php7-7.0.13-linux-x64-1479850467.tgz
+  uri: https://s3-ap-northeast-1.amazonaws.com/buildpacks-binaries-bucket/concourse-binaries/php7-yahoo/php7-7.0.13-linux-x64-1481783085.tgz
   md5: e0c33a576827a4c553cd3309000b68b9
   cf_stacks:
   - cflinuxfs2
